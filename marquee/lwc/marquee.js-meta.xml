@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Marquee</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property 
+                name="message" 
+                type="String" 
+                required="true"
+                label="Message"
+                placeholder="Enter message"
+                description="Enter message that will be displayed in the marquee ticker"
+            ></property>
+
+            <property 
+                name="height"
+                type="Integer" 
+                default="40"
+                label="Set height"
+                description="Set height of the component"
+            ></property>
+
+            <property 
+                name="backgroundColor"
+                type="Color" 
+                default="rgb(186, 5, 23)"
+                label="Set background"
+                description="Choose a custom background color for the marquee ticker"
+            ></property>
+
+            <property 
+                name="isFixedDisplay"
+                type="Boolean" 
+                default="false"
+                label="Display fixed top of screen"
+                description="Keep the marquee ticker fixed at the top of the screen when scrolling"
+            ></property>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
