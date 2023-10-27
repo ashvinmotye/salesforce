@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Social Media</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property 
+                name="textColor"
+                type="Color" 
+                default="rgb(0, 0, 0)"
+                label="Text Color"
+                description="Choose a color for the text"
+            ></property>
+
+            <property 
+                name="lineColor"
+                type="Color" 
+                default="rgb(0, 0, 0)"
+                label="Underline Color"
+                description="Choose a color for the underline"
+            ></property>
+
+            <property 
+                name="iconColor"
+                type="Color" 
+                default="rgb(0, 0, 0)"
+                label="Icon Color"
+                description="Choose a color for the icon"
+            ></property>
+
+            <property 
+                name="iconsAlignment"
+                label="Icons alignment" 
+                type="String" 
+                datasource="Center, Left, Right" 
+                default="Center"
+            ></property>
+
+            <property 
+                name="openLinkInNewTab"
+                type="Boolean" 
+                default="true"
+                label="Open links in new tab"
+            ></property>
+
+            <property 
+                name="showIconOnHover"
+                type="Boolean" 
+                default="true"
+                label="Show icon when hovering the link"
+            ></property>
+
+            <property 
+                name="enableIconMovement"
+                type="Boolean" 
+                default="true"
+                label="Enable icon movement when hovering the link"
+            ></property>
+
+            <!-- Links for social media -->
+            <property 
+                name="facebook"
+                type="String" 
+                label="Facebook link"
+            ></property>
+            
+            <property 
+                name="instagram"
+                type="String" 
+                label="Instagram link"
+            ></property>
+
+            <property 
+                name="x"
+                type="String" 
+                label="X (ex-Twitter) link"
+            ></property>
+
+            <property 
+                name="linkedin"
+                type="String" 
+                label="Linkedin link"
+            ></property>
+
+            <property 
+                name="youtube"
+                type="String" 
+                label="Youtube link"
+            ></property>
+
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
