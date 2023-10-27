@@ -1,0 +1,128 @@
+<template>
+    <div class="footer-container" style={style}>
+        <div class="footer-content">
+            <!-- Instagram -->
+            <template lwc:if={instagram}>
+                <div class="footer-item">
+                    <a 
+                        href={instagram} 
+                        class="footer-link" 
+                        target={linkTarget} 
+                        data-hover={textHoverAttribute}
+                        onmousemove={hoverLink}
+                    >
+                        <span class="footer-link-text">Instagram</span>
+                        
+                        <template lwc:if={displayIconForDesktopOnly}>
+                            <span class="footer-link-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="38" viewBox="0 0 38 38" fill="none">
+                                    <path
+                                        d="M19.0042 9.25521C13.6126 9.25521 9.26369 13.6041 9.26369 18.9958C9.26369 24.3874 13.6126 28.7363 19.0042 28.7363C24.3959 28.7363 28.7448 24.3874 28.7448 18.9958C28.7448 13.6041 24.3959 9.25521 19.0042 9.25521ZM19.0042 25.3284C15.52 25.3284 12.6716 22.4885 12.6716 18.9958C12.6716 15.5031 15.5115 12.6631 19.0042 12.6631C22.4969 12.6631 25.3369 15.5031 25.3369 18.9958C25.3369 22.4885 22.4885 25.3284 19.0042 25.3284ZM31.4152 8.85678C31.4152 10.1199 30.3979 11.1287 29.1432 11.1287C27.8801 11.1287 26.8713 10.1114 26.8713 8.85678C26.8713 7.60212 27.8886 6.58483 29.1432 6.58483C30.3979 6.58483 31.4152 7.60212 31.4152 8.85678ZM37.8665 11.1626C37.7224 8.11924 37.0272 5.42342 34.7977 3.20234C32.5766 0.98126 29.8808 0.286113 26.8374 0.133519C23.7007 -0.0445064 14.2993 -0.0445064 11.1626 0.133519C8.12772 0.277635 5.4319 0.972783 3.20234 3.19386C0.972783 5.41495 0.286113 8.11076 0.133519 11.1542C-0.0445064 14.2908 -0.0445064 23.6922 0.133519 26.8289C0.277635 29.8723 0.972783 32.5681 3.20234 34.7892C5.4319 37.0103 8.11924 37.7054 11.1626 37.858C14.2993 38.036 23.7007 38.036 26.8374 37.858C29.8808 37.7139 32.5766 37.0187 34.7977 34.7892C37.0187 32.5681 37.7139 29.8723 37.8665 26.8289C38.0445 23.6922 38.0445 14.2993 37.8665 11.1626ZM33.8143 30.1944C33.153 31.856 31.873 33.1361 30.2029 33.8058C27.7021 34.7977 21.7679 34.5688 19.0042 34.5688C16.2406 34.5688 10.2979 34.7892 7.80558 33.8058C6.144 33.1446 4.86392 31.8645 4.1942 30.1944C3.20234 27.6936 3.43123 21.7594 3.43123 18.9958C3.43123 16.2321 3.21082 10.2895 4.1942 7.7971C4.85544 6.13553 6.13553 4.85544 7.80558 4.18572C10.3064 3.19386 16.2406 3.42275 19.0042 3.42275C21.7679 3.42275 27.7105 3.20234 30.2029 4.18572C31.8645 4.84696 33.1446 6.12705 33.8143 7.7971C34.8061 10.2979 34.5772 16.2321 34.5772 18.9958C34.5772 21.7594 34.8061 27.7021 33.8143 30.1944Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </template>
+                    </a>
+                </div>
+            </template> <!-- end Instagram -->
+
+            <!-- Facebook -->
+            <template lwc:if={facebook}>
+                <div class="footer-item">
+                    <a 
+                        href={facebook} 
+                        class="footer-link" 
+                        target={linkTarget} 
+                        data-hover={textHoverAttribute}
+                        onmousemove={hoverLink}
+                    >
+                        <span class="footer-link-text">Facebook</span>
+    
+                        <template lwc:if={displayIconForDesktopOnly}>
+                            <span class="footer-link-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="38" viewBox="0 0 21 38" fill="none">
+                                    <path
+                                        d="M19.0186 21.375L20.0739 14.4979H13.4752V10.0351C13.4752 8.15367 14.397 6.31973 17.3523 6.31973H20.3523V0.464609C20.3523 0.464609 17.6299 0 15.0271 0C9.59277 0 6.04066 3.29383 6.04066 9.25656V14.4979H0V21.375H6.04066V38H13.4752V21.375H19.0186Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </template>
+                    </a>
+                </div>
+            </template> <!-- end Facebook -->
+
+            <!-- X (Twitter) -->
+            <template lwc:if={x}>
+                <div class="footer-item">
+                    <a 
+                        href={x} 
+                        class="footer-link" 
+                        target={linkTarget} 
+                        data-hover={textHoverAttribute}
+                        onmousemove={hoverLink}
+                    >
+                        <span class="footer-link-text">X</span>
+    
+                        <template lwc:if={displayIconForDesktopOnly}>
+                            <span class="footer-link-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="35" viewBox="0 0 39 35" fill="none">
+                                    <path d="M30.6182 0.125H36.4451L23.715 14.6747L38.691 34.4735H26.9649L17.7807 22.4656L7.27178 34.4735H1.44135L15.0574 18.911L0.690964 0.125H12.7147L21.0165 11.1007L30.6182 0.125ZM28.5731 30.9858H31.8019L10.9603 3.4295H7.49549L28.5731 30.9858Z" fill="black"/>
+                                </svg>
+                            </span>
+                        </template>
+                    </a>
+                </div>
+            </template> <!-- end X (Twitter) -->
+
+            <!-- Linkedin -->
+            <template lwc:if={linkedin}>
+                <div class="footer-item">
+                    <a 
+                        href={linkedin} 
+                        class="footer-link" 
+                        target={linkTarget} 
+                        data-hover={textHoverAttribute}
+                        onmousemove={hoverLink}
+                    >
+                        <span class="footer-link-text">LinkedIn</span>
+    
+                        <template lwc:if={displayIconForDesktopOnly}>
+                            <span class="footer-link-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="38" viewBox="0 0 38 38" fill="none">
+                                    <path
+                                        d="M8.50608 38H0.627693V12.6293H8.50608V38ZM4.56265 9.16855C2.04339 9.16855 0 7.0819 0 4.56265C1.80317e-08 3.35256 0.480706 2.19203 1.33637 1.33637C2.19203 0.480706 3.35256 0 4.56265 0C5.77274 0 6.93326 0.480706 7.78892 1.33637C8.64459 2.19203 9.12529 3.35256 9.12529 4.56265C9.12529 7.0819 7.08105 9.16855 4.56265 9.16855ZM37.9924 38H30.1309V25.6497C30.1309 22.7064 30.0716 18.9317 26.0348 18.9317C21.9387 18.9317 21.311 22.1296 21.311 25.4377V38H13.4411V12.6293H20.9972V16.0901H21.1074C22.1592 14.0968 24.7285 11.9932 28.5617 11.9932C36.5351 11.9932 38.0008 17.2437 38.0008 24.0635V38H37.9924Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </template>
+                    </a>
+                </div>
+            </template> <!-- end Linkedin -->
+
+            <!-- Youtube -->
+            <template lwc:if={youtube}>
+                <div class="footer-item">
+                    <a 
+                        href={youtube} 
+                        class="footer-link" 
+                        target={linkTarget} 
+                        data-hover={textHoverAttribute}
+                        onmousemove={hoverLink}
+                    >
+                        <span class="footer-link-text">Youtube</span>
+    
+                        <template lwc:if={displayIconForDesktopOnly}>
+                            <span class="footer-link-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="39" viewBox="0 0 55 39" fill="none">
+                                    <path
+                                        d="M53.024 6.87981C52.4012 4.53464 50.5661 2.68765 48.2361 2.06085C44.0128 0.921875 27.0778 0.921875 27.0778 0.921875C27.0778 0.921875 10.143 0.921875 5.91956 2.06085C3.58956 2.68775 1.75447 4.53464 1.13163 6.87981C0 11.1306 0 19.9994 0 19.9994C0 19.9994 0 28.8682 1.13163 33.119C1.75447 35.4642 3.58956 37.2342 5.91956 37.861C10.143 39 27.0778 39 27.0778 39C27.0778 39 44.0127 39 48.2361 37.861C50.5661 37.2342 52.4012 35.4642 53.024 33.119C54.1556 28.8682 54.1556 19.9994 54.1556 19.9994C54.1556 19.9994 54.1556 11.1306 53.024 6.87981ZM21.5391 28.0516V11.9472L35.6934 19.9996L21.5391 28.0516Z"
+                                        fill="black" />
+                                </svg>
+                            </span>
+                        </template>
+                    </a>
+                </div>
+            </template> <!-- end Youtube -->
+        </div> <!-- end .footer-content -->
+    </div> <!-- end .footer-container -->
+</template>
